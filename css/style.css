@@ -29,7 +29,7 @@ a {
 /* 제목 */
 .wrap h1 {
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: "orbitron";
 	color: #fff;
 	letter-spacing: 1px;
@@ -54,7 +54,7 @@ a {
 .wrap .auto {
 	position: absolute;
 	bottom: 20px;
-	left: 60px;
+	left: 50px;
 	z-index: 20;
 }
 .wrap .auto li {
@@ -77,8 +77,8 @@ a {
 	height: 100%;
 }
 .wrap .swiper-wrapper .swiper-slide {
-	width: 500px;
-	height: 500px;
+	width: 380px;
+	height: 470px;
 	position: relative;
 	top: 50%;
 	margin-top: -230px;
@@ -173,15 +173,15 @@ a {
 	left: auto;
 	right: 100px;
 	top: auto;
-	bottom: 20px;
+	bottom: 10px;
 	filter: grayscale(100%) brightness(3);
 	transform: scale(0.5);
 }
 .wrap .swiper-button-next {
 	left: auto;
-	right: 60px;
+	right: 50px;
 	top: auto;
-	bottom: 20px;
+	bottom: 10px;
 	filter: grayscale(100%) brightness(3);
 	transform: scale(0.5);
 }
@@ -189,9 +189,9 @@ a {
 /* 페이지네이션 */
 .swiper-pagination-fraction {
 	bottom: auto;
-	top: 20px;
+	top: 10px;
 	left: auto;
-	right: 50px;
+	right: 40px;
 	width: auto;
 	font-size: 16px;
 	font-family: "orbitron";
