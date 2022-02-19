@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>거람 김반석 갤러리</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>나랏말싸미 <span>거람 김반석 갤러리</span></h1>
+
+        <ul class="auto">
+            <li class="btnStart"><i class="fas fa-play"></i></li>
+            <li class="btnStop"><i class="fas fa-pause"></i></li>
+        </ul>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic1.jpg">
+                        <h2>꿈</h2>
+                        <p>솟대 그리고 미래</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic2.jpg">
+                        <h2>사랑</h2>
+                        <p>사랑의 사전적 의미는 깊이깊이 생각한다 입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic3.jpg">
+                        <h2>황소</h2>
+                        <p>힘있게 나아가자!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic4.jpg">
+                        <h2>거람 김반석 작가</h2>
+                        <p>글그림은 마음소리를 빛으로 나투는 그림입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic5.jpg">
+                        <h2>나랏말싸미 강상호 대표</h2>
+                        <p>이제 시작입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 좌우버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- 페이징 버튼 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.wrap', {
+            direction: "horizontal",
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            spaceBetween: 0,
+            slidesPerView: "auto",
+            grabCursor: true,
+            centeredSlides: true,
+            speed: 1000,
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: -100,
+                depth: 400,
+                modifier: 1,
+                slideShadows: false,
+            },
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: true
+            }
+        });
+
+        // .btnStart 요소를 찾아서 btnStart에 저장
+        const btnStart = document.querySelector(".btnStart");
+        // .btnStop 요소를 찾아서 btnStop에 저장
+        const btnStop = document.querySelector(".btnStop");
+
+        //btnStart버튼을 클릭시 자동롤링 시작
+        btnStart.addEventListener("click", () => {
+            swiper.autoplay.start();
+        });
+
+        //btnStart버튼을 클릭시 자동롤링 정지
+        btnStop.addEventListener("click", () => {
+            swiper.autoplay.stop();
+        });
+    </script>
+</body>
+
+</html>
