@@ -53,7 +53,7 @@ a {
 /* 자동 재생 버튼 */
 .wrap .auto {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 50px;
 	z-index: 20;
 }
@@ -173,7 +173,7 @@ a {
 	left: auto;
 	right: 100px;
 	top: auto;
-	bottom: 10px;
+	bottom: 20px;
 	filter: grayscale(100%) brightness(3);
 	transform: scale(0.5);
 }
@@ -181,7 +181,7 @@ a {
 	left: auto;
 	right: 50px;
 	top: auto;
-	bottom: 10px;
+	bottom: 20px;
 	filter: grayscale(100%) brightness(3);
 	transform: scale(0.5);
 }
