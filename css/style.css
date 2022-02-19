@@ -29,7 +29,7 @@ a {
 /* 제목 */
 .wrap h1 {
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 25px;
 	font-family: "orbitron";
 	color: #fff;
 	letter-spacing: 1px;
@@ -39,6 +39,15 @@ a {
 }
 .wrap h1 span {
 	opacity: 0.8;
+}
+
+/* 갤러리 */
+.wrap h2 {
+	font-size: 10px;
+}
+
+.wrap p {
+	color: #fff;
 }
 
 /* 자동 재생 버튼 */
